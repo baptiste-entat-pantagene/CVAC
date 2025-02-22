@@ -1,0 +1,32 @@
+name: Render main.pdf
+on: 
+  push:
+    tags:
+      - 'v*'  # (e.g., v1.0.0)
+
+jobs:
+  render-paper:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: typst-community/setup-typst@v4
+        with:
+          cache-dependency-path: requirements.typ
+
+      # Compile the Typst document
+      - run: typst compile main.typ CV_baptiste.pdf
+
+      # Upload the PDF as an artifact
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: CV_baptiste
+          path: CV_baptiste.pdf
+
+      # Create or update a release and attach the PDF
+      - name: Upload to GitHub Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: CV_baptiste.pdf
