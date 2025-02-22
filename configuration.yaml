@@ -1,0 +1,147 @@
+contacts:
+  name: Baptiste ENTAT-PANTAGÈNE
+  title: Etudiant en ingénierie informatique
+  email: bapt84@gmail.com 
+  phone: "+33 629085013"
+  address: "107 rue Ambroise Croizat, Villejuif 94800, apt 202, France"
+  linkedin: "https://www.linkedin.com/in/baptiste-entat/"
+  nationality: Français
+  github: "https://github.com/baptiste-entat-pantagene/"
+
+profils:
+  - name: "Centres d'intérêt"
+    items:
+      - Escalade
+      - Randonnée
+skills:
+  - name: Langages de programmation
+    items:
+      - Python
+      - C
+      - C++
+      - C# .NET Core
+      - Java
+      - ASM 68000
+  - name: Outils de développement
+    items:
+      - Git
+      - Nix
+      - Unity
+      - SDL2
+      - GTK+
+  - name: Compétences bureautiques
+    items:
+      - LaTeX
+      - Typst
+      - Word
+      - PowerPoint
+      - Excel
+  - name: Compétences Polyvalentes
+    items:
+      - Anglais B2
+      - Formation aux premiers secours (PSC1)
+      - Titulaire du permis B, avec voiture
+  
+associative:
+  - asso:
+    name: Prologin
+    link: https://prologin.org/
+    from: "Mars 2024"
+    to: "Aujourd’hui"
+    description: En tant qu'encadrant bénévole au sein de l'association Prologin, je contribue activement à la promotion de l'informatique et à l'inclusion numérique auprès des jeunes.
+    description2: Des ateliers d'initiation à l'informatique sont organisés dans les écoles, ainsi que des stages destinés aux jeunes filles afin de favoriser leur inclusion dans le secteur de l’informatique.
+
+
+jobs:
+  - position: Chargé de TP - Assistant C# et CAML (ACDC)
+    company:
+      name: EPITA
+      link: https://www.epita.fr/
+    description:
+      - "Rédaction et élaboration de sujets de TP adaptés pour les étudiants de première année, assurant une progression pédagogique cohérente et stimulante."
+      - "Incorporation de la conception dans une chaîne de travail commune, garantissant une notation automatisée et homogène pour une évaluation cohérente."
+      - "Support direct sur site, répondant aux questions des étudiants et guidant leur apprentissage des concepts en C# et CAML."
+    from: "Août 2024"
+    to: "Aujourd’hui"
+    tags:
+      - Conception pédagogique
+      - Accompagnement des étudiants
+
+  - position: Agent de filtrage en gare
+    company:
+      name: SNCF 
+      link: https://www.sncf.com/
+    description:
+      - Vérification des titres de transports.
+      - "Orientation des usagers et aide à l’achat de billets."
+      - Gestion de la foule et facilitation des correspondances usagers.
+    from: "Juin 2022"
+    to: "Août 2022"
+    tags:
+      - Mobilité urbaine
+      - Assistance aux usagers
+      
+  - position: Secrétaire du bureau
+    company:
+      name: La Bricothèque 
+      link: https://fablab-pernes.fr/
+    description:
+      - Démarches administratives et rédaction de comptes rendus.
+      - Accueil du public.
+      - Initiation des usagers au fonctionnement des machines du fablab.
+    
+    from: "Juin 2018"
+    to: "Janvier 2022"
+    tags:
+      - Administration
+      - Collaboration
+
+education:
+  - university:
+      where: "Paris, France"
+      name: "EPITA - École pour l'informatique et les techniques avancées"
+      link: "https://www.epita.fr/"
+      degree: "1ʳᵉ année du cycle ingénieur - Semestre 5"
+      major: "#None"
+      track: "#None"
+      cycleInter:
+        name: "UPES - university of petroleum and energy studies"
+        where: "Dehradun, Uttarakhand, India"
+        from: "Janvier 2024"
+        to: "Mai 2024"
+      from: "2022"
+      to: "2025"
+      codeProjects:
+        - codeProject:
+            name: 42sh
+            description: "42sh est une implémentation d'un shell Linux conforme à la norme POSIX, développée dans le cadre d'un projet scolaire en équipe de quatre."
+            from: "Janvier 2025"
+            to: "#NONE"
+            tags:
+              - C
+              - POSIX
+              - Gestion de projet
+              - GitLab CI/CD
+        - codeProject:
+            name: Hypnos
+            description: "Hypnos est un prototype de moteur voxel permettant la génération procédurale de terrains ainsi que leur exploitation dans des jeux. Celui-ci fait partie du projet de développement en équipe de deuxième semestre d'étude."
+            from: "Décembre 2022"
+            to: "Juin 2023"
+            tags:
+              - C#
+              - Unity
+              - "Librairies : BURST, Jobs, Netcode"
+        
+  - university:
+      where: "Carpentras, France"
+      name: "Lycée Victor-Hugo"
+      link: "http://www.lyc-hugo-carpentras.ac-aix-marseille.fr/"
+      degree: "Classe terminal général"
+      major: "Spécialités : Mathématiques et Sciences du numérique."
+      track: "Bac : Mention Bien"
+      from: "2018"
+      to: "2022"
+      cycleInter: "#NONE"
+      codeProjects: "#NONE"
+        
+      
