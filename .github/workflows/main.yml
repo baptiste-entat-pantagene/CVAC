@@ -20,3 +20,5 @@ jobs:
         with:
           name: CV_baptiste
           path: CV_baptiste.pdf
+          if-no-files-found: error
+          compression-level: 0
