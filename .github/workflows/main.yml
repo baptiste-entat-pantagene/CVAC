@@ -22,3 +22,18 @@ jobs:
           path: CV_baptiste.pdf
           if-no-files-found: error
           compression-level: 0
+
+      # Deploy PDF to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: CV_baptiste.pdf
+  deploy:
+    needs: render-paper
+    permissions:
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy GitHub Pages
+        uses: actions/deploy-pages@v4
