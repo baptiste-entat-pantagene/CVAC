@@ -14,20 +14,23 @@ jobs:
       # Compile the Typst document
       - run: typst compile main.typ CV_baptiste.pdf
 
+      - name: Prepare for GitHub Pages
+        run: |
+          mkdir public
+          mv CV_baptiste.pdf public/
+
       # Upload the PDF as an artifact
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: CV_baptiste
-          path: CV_baptiste.pdf
-          if-no-files-found: error
-          compression-level: 0
+          path: public/CV_baptiste.pdf
 
       # Deploy PDF to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: CV_baptiste.pdf
+          path: public
   deploy:
     needs: render-paper
     permissions:
